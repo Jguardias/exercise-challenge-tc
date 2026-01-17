@@ -10,10 +10,16 @@
 <body>
     <header>
         <h1>exercise-challenge-tc</h1>
-        <button class="btn btn-success">
-            <i class="bi bi-plus"></i>
-            Agregar Producto
-        </button>
+        <div style="display: flex; height: 38px; gap: 12px;">
+            <div class="input-group mb-3" style="width: 250px;">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar producto" aria-label="Buscar producto" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-success">
+                <i class="bi bi-plus"></i>
+                Agregar Producto
+            </button>
+            <div>
     </header>
     <main>
         <table class="inventory-table">
