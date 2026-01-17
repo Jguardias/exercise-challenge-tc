@@ -15,7 +15,7 @@
                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
                 <input type="text" class="form-control" placeholder="Buscar producto" aria-label="Buscar producto" aria-describedby="basic-addon1">
             </div>
-            <button class="btn btn-success">
+            <button id="btnOpenCreateProduct" class="btn btn-success">
                 <i class="bi bi-plus"></i>
                 Agregar Producto
             </button>
@@ -58,16 +58,18 @@
             </tbody>
         </table>
 
-        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: #666666;">
+        <div class="d-flex justify-content-between align-items-center mt-4 text-secondary" style="font-size: 0.75rem;">
             <div>Mostrando 7 productos de 1,240</div>
-            <div>
-                <button style="padding: 2px 8px; background: white; border: 1px solid #ddd; cursor: pointer;">Anterior</button>
-                <button style="padding: 2px 8px; background: #000; color: white; border: 1px solid #000; cursor: pointer;">1</button>
-                <button style="padding: 2px 8px; background: white; border: 1px solid #ddd; cursor: pointer;">2</button>
-                <button style="padding: 2px 8px; background: white; border: 1px solid #ddd; cursor: pointer;">Siguiente</button>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-dark btn-sm">Anterior</button>
+                <button type="button" class="btn btn-dark btn-sm">1</button>
+                <button type="button" class="btn btn-outline-dark btn-sm">2</button>
+                <button type="button" class="btn btn-outline-dark btn-sm">Siguiente</button>
             </div>
         </div>
     </main>
+
+    <?php include_once('src/components/modal.php') ?>
     <?php include_once('src/footer.php') ?>
 </body>
 
