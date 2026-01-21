@@ -3,3 +3,5 @@ config/db_class_meekro.php
 
 # Ignore the database credentials
 config/db_datos.php
+
+.htaccess.old

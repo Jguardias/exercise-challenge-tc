@@ -8,6 +8,7 @@ DB::$user = $datos['user'];
 DB::$password = $datos['pass'];
 DB::$dbName = $datos['db'];
 DB::$host = $datos['host'];
+DB::$encoding = 'utf8mb4';
 
 //  test connection
 // try {

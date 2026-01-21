@@ -36,25 +36,8 @@
                     <th class="text-right">Acciones</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Teclado Mecánico G-Pro</strong></td>
-                    <td>SKU-10293</td>
-                    <td>$129.00</td>
-                    <td>0.85 kg</td>
-                    <td><span class="status-badge">Electrónica</span></td>
-                    <td>42</td>
-                    <td>Oct 12, 2023</td>
-                    <td>Nov 05, 2023</td>
-                    <td class="text-right">
-                        <button type="button" class="btn btn-primary" aria-label="Editar">
-                            <i class="bi bi-pencil-fill"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger" aria-label="Eliminar">
-                            <i class="bi bi-trash3-fill"></i>
-                        </button>
-                    </td>
-                </tr>
+            <tbody id="tableProducts">
+                <!-- Aquí se insertan los productos dinámicamente -->
             </tbody>
         </table>
 
