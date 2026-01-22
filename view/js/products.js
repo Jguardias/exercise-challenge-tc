@@ -79,12 +79,11 @@ async function updateProductById(id, data) {
         Object.keys(data).forEach(key => {
             formData.append(key, data[key]);
         });
-        const response = await fetch('../controllers/productsController.php', {
+        await fetch('../controllers/productsController.php', {
             method: 'POST',
             body: formData
         });
-        const result = await response.json();
-        console.log("update product:", result);
+
     } catch (error) {
         console.error("Error update product:", error);
     }
