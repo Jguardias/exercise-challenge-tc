@@ -53,6 +53,7 @@
     </main>
 
     <?php include_once('src/components/modal.php') ?>
+    <?php include_once('src/components/modalEdit.php') ?>
     <?php include_once('src/footer.php') ?>
 </body>
 

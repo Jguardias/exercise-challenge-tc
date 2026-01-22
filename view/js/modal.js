@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
     const modal = document.getElementById('modalCreateProduct');
+    const formCreate = document.getElementById('formCreateProduct');
     const btnOpen = document.getElementById('btnOpenCreateProduct');
     const btnCancel = document.getElementById('btnCancelModal');
     const btnCloseIcon = document.getElementById('btnCloseModalIcon');
 
-   
+
     const openModal = () => {
         if (modal) {
             modal.classList.add('is-open');
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-   
     const closeModal = () => {
         if (modal) {
             modal.classList.remove('is-open');
@@ -21,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    if (formCreate) {
+        formCreate.addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+            await addProduct();
+        });
+    }
     
     if (btnOpen) {
         btnOpen.addEventListener('click', openModal);
@@ -47,4 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
-});
+
+})

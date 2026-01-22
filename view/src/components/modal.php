@@ -1,6 +1,6 @@
 <div class="modal-custom" id="modalCreateProduct" tabindex="-1">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" style="border-top: 5px solid #2FA44C;">
 
             <div class="modal-header">
                 <h5 class="modal-title" id="modalCreateProductLabel">Crear nuevo producto</h5>
@@ -30,9 +30,9 @@
                             <label for="productCategory" class="form-label">Categoría</label>
                             <select class="form-select" id="productCategory">
                                 <option value="" selected disabled>Seleccione una categoría</option>
-                                <option value="electronics">Electrónica</option>
-                                <option value="furniture">Muebles</option>
-                                <option value="office">Oficina</option>
+                                <option value="Electrónica">Electrónica</option>
+                                <option value="Muebles">Muebles</option>
+                                <option value="Oficina">Oficina</option>
                             </select>
                         </div>
                         <div class="col-md-6">
@@ -45,7 +45,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" id="btnCancelModal">Cancelar</button>
-                <button type="submit" form="formCreateProduct" class="btn btn-primary">Guardar</button>
+                <button type="submit" form="formCreateProduct" class="btn btn-success">Guardar</button>
             </div>
 
         </div>
